@@ -4,7 +4,7 @@ import { marked } from 'marked';
 
 
 const MODELS = {
-  "phi3": { name: "phi3", path: "microsoft/Phi-3-mini-4k-instruct-onnx-web", externaldata: true },
+  "phi35": { name: "phi35", path: "onnx-community/Phi-3.5-mini-instruct-onnx-web", externaldata: true },
   "phi3dev": { name: "phi3dev", path: "schmuell/Phi-3-mini-4k-instruct-onnx-web", externaldata: true },
 }
 
@@ -171,7 +171,7 @@ document.getElementById('user-input').addEventListener('keydown', function (e) {
 function getConfig() {
   const query = window.location.search.substring(1);
   var config = {
-    model: "phi3",
+    model: "phi35",
     provider: "webgpu",
     profiler: 0,
     verbose: 0,
