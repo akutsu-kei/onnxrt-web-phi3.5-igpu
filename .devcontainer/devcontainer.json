@@ -1,0 +1,9 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20",
+  "remoteUser": "root",
+  
+  // if needed
+	"mounts": [
+    "type=bind,source=${localEnv:HOME}/.ssh,target=/root/.ssh,readonly",
+  ]
+}
